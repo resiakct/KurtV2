@@ -26,7 +26,7 @@ module.exports = new Object({
       const result = await this.t(a);
 
       message.reply({
-        body: `🤷🏻 | 𝗔𝘀𝗶𝗺\n━━━━━━━━━━━━━\n\n${result}`,
+        body: `${result}`,
       }, (err, info) => {
         api.onReply.set(info.messageID, {
           commandName: this.config.name,
